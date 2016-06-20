@@ -230,9 +230,9 @@ class NVD3Chart(object):
             } for i, j in enumerate(y)]
         else:
             if self.model == 'pieChart':
-                serie = [{'label': x[i], 'value': y} for i, y in enumerate(y)]
+                serie = [{'label': l, 'value': v} for l, v in zip(x, y)]
             else:
-                serie = [{'x': x[i], 'y': y} for i, y in enumerate(y)]
+                serie = [{'x': l, 'y': v} for l, v in zip(x, y)]
 
         data_keyvalue = {'values': serie, 'key': name}
 

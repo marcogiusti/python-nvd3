@@ -1,11 +1,14 @@
-include CONTRIBUTING.rst
 include CHANGELOG.rst
+include CONTRIBUTING.rst
+include CONTRIBUTORS
 include LICENSE
 include README.rst
-
-global-exclude *.pyc
-recursive-include nvd3 *
-recursive-exclude * __pycache__
-recursive-exclude * *.py[co]
-
-recursive-include docs *.rst conf.py Makefile make.bat
+include Makefile
+include tests.py
+include TODO.rst
+include update_version.sh
+include requirements.txt
+include-recursive examples
+graft examples
+graft docs
+prune docs/build

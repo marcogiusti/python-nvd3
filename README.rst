@@ -1,37 +1,47 @@
+========================================================
 Python Wrapper for NVD3 - It's time for beautiful charts
 ========================================================
 
 :Description: Python-nvd3 is a wrapper for NVD3 graph library
 :NVD3: NVD3 http://nvd3.org/
 :D3: Data-Driven Documents http://d3js.org/
-:Maintainers: Areski_ & Oz_
-:Contributors: `list of contributors <https://github.com/areski/python-nvd3/graphs/contributors>`_
+:Authors: Areski_ & Oz_
+:Maintainer: `Marco Giusti`_
+:Contributors: List of `contributors.`_
 
 .. _Areski: https://github.com/areski/
 .. _Oz: https://github.com/oz123/
+.. _Marco Giusti: https://github.com/marcogiusti/
+.. _contributors: https://github.com/marcogiusti/python-nvd3/graphs/contributors
 
-.. image:: https://api.travis-ci.org/areski/python-nvd3.png?branch=develop
-  :target: https://travis-ci.org/areski/python-nvd3
+.. image:: https://travis-ci.org/marcogiusti/python-nvd3.svg?branch=develop
+    :target: https://travis-ci.org/marcogiusti/python-nvd3
 
+..
 .. image:: https://coveralls.io/repos/areski/python-nvd3/badge.png?branch=develop
   :target: https://coveralls.io/r/areski/python-nvd3?branch=develop
 
+..
 .. image:: https://img.shields.io/pypi/v/python-nvd3.svg
   :target: https://pypi.python.org/pypi/python-nvd3/
   :alt: Latest Version
 
+..
 .. image:: https://img.shields.io/pypi/dm/python-nvd3.svg
   :target: https://pypi.python.org/pypi/python-nvd3/
   :alt: Downloads
 
+..
 .. image:: https://img.shields.io/pypi/pyversions/python-nvd3.svg
   :target: https://pypi.python.org/pypi/python-nvd3/
   :alt: Supported Python versions
 
+..
 .. image:: https://img.shields.io/pypi/l/python-nvd3.svg
   :target: https://pypi.python.org/pypi/python-nvd3/
   :alt: License
 
+..
 .. image:: https://requires.io/github/areski/python-nvd3/requirements.svg?branch=develop
   :target: https://requires.io/github/areski/python-nvd3/requirements/?branch=develop
   :alt: Requirements Status
@@ -40,15 +50,13 @@ NVD3 is an attempt to build re-usable charts and chart components
 for d3.js without taking away the power that d3.js offers you.
 
 Python-NVD3 makes your life easy! You write Python and the library
-renders JavaScript for you!
-These graphs can be part of your web application:
+renders JavaScript for you! These graphs can be part of your web
+application:
 
- .. image:: https://raw.githubusercontent.com/areski/python-nvd3/develop/docs/showcase/multiple-charts.png
+ .. image:: https://raw.githubusercontent.com/marcogiusti/python-nvd3/develop/docs/showcase/multiple-charts.png
 
-
-
-
-Want to try it yourself? Install python-nvd3, enter your python shell and try this quick demo::
+Want to try it yourself? Install python-nvd3, enter your python shell
+and try this quick demo::
 
     >>> from nvd3 import pieChart
     >>> type = 'pieChart'
@@ -59,7 +67,6 @@ Want to try it yourself? Install python-nvd3, enter your python shell and try th
     >>> chart.add_serie(y=ydata, x=xdata, extra=extra_serie)
     >>> chart.buildcontent()
     >>> print chart.htmlcontent
-
 
 This will output the following HTML to render a live chart. The HTML could be
 stored into a HTML file, used in a Web application, or even used via Ipython Notebook::
@@ -101,11 +108,11 @@ stored into a HTML file, used in a Web application, or even used via Ipython Not
     });
     </script>
 
-
 Documentation
 -------------
 
-Check out the documentation on `Read the Docs`_ for some live Chart examples!
+Check out the documentation on `Read the Docs`_ for some live Chart
+examples!
 
 .. _Read the Docs: http://python-nvd3.readthedocs.org
 
@@ -122,37 +129,42 @@ Install, upgrade and uninstall python-nvd3 with these commands::
 Dependecies
 -----------
 
-D3 and NvD3 can be installed through bower (which itself can be installed through npm).
-See http://bower.io/ and https://npmjs.org for further information.
-To install bower globally execute::
+D3 and NvD3 can be installed through bower (which itself can be
+installed through npm).  See http://bower.io/ and https://npmjs.org for
+further information. To install bower globally execute::
 
     $ npm install -g bower
 
-Note : you might prefer to save your npm dependencies locally in a ``package.json`` file.
+Note : you might prefer to save your npm dependencies locally in a
+``package.json`` file.
 
-Then in the directory where you will use python-nvd3, just execute the following commands::
+Then in the directory where you will use python-nvd3, just execute the
+following commands::
 
     $ bower install d3#3.5.5
     $ bower install nvd3#1.7.1
 
-This will create a directory "bower_components" where d3 & nvd3 will be saved.
+This will create a directory "bower_components" where d3 & nvd3 will be
+saved.
 
-Note : you might prefer to save your bower dependencies locally in a ``bower.json`` file.
-You can also configure the directory where your bower dependencies will be
-saved adding a ``.bowerrc`` file in your project root directory.
+Note : you might prefer to save your bower dependencies locally in a
+``bower.json`` file.  You can also configure the directory where your
+bower dependencies will be saved adding a ``.bowerrc`` file in your
+project root directory.
 
 
 Django Wrapper
 --------------
 
 There is also a django wrapper for nvd3 available:
-https://github.com/areski/django-nvd3
+https://github.com/marcogiusti/django-nvd3
 
 
 IPython Notebooks
 -----------------
 
-Python-NVD3 works nicely within IPython Notebooks (thanks to @jdavidheiser)
+Python-NVD3 works nicely within IPython Notebooks (thanks to
+@jdavidheiser)
 
 See the examples directory for an Ipython notebook with python-nvd3.
 
@@ -160,4 +172,8 @@ See the examples directory for an Ipython notebook with python-nvd3.
 License
 -------
 
-Python-nvd3 is licensed under MIT, see `MIT-LICENSE.txt`.
+Python-nvd3 is licensed under the MIT license, see `LICENSE.txt` for the
+details.
+
+
+.. vim:tw=72:

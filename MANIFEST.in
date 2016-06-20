@@ -1,7 +1,7 @@
 include CHANGELOG.rst
 include CONTRIBUTING.rst
 include CONTRIBUTORS
-include LICENSE
+include LICENSE.txt
 include tests.py
 include-recursive examples
 graft examples

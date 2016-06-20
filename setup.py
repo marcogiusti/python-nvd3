@@ -40,11 +40,6 @@ setup(
         'Jinja2>=2.8'
         # -*- Extra requirements: -*-
     ],
-    entry_points={
-        'console_scripts': [
-            'nvd3 = nvd3.NVD3Chart:_main',
-        ],
-    },
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',

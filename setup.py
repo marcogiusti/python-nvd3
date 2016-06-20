@@ -38,11 +38,9 @@ setup(
     install_requires=[
         'python-slugify==1.1.4',
         'Jinja2>=2.8'
-        # -*- Extra requirements: -*-
     ],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
-        'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
@@ -54,6 +52,5 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Topic :: Multimedia :: Graphics :: Presentation',
-        'Topic :: Software Development :: Libraries :: Python Modules',
     ],
 )
